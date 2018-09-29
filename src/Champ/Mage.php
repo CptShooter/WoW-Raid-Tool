@@ -19,9 +19,9 @@ class Mage extends Champ
     {
         $this->name = 'Mage';
         $this->classColor = [104 , 204, 239];
-        $this->specs[] = new Arcane();
-        $this->specs[] = new Fire();
-        $this->specs[] = new Frost();
+        $this->specs['Arcane'] = new Arcane();
+        $this->specs['Fire'] = new Fire();
+        $this->specs['Frost'] = new Frost();
         $this->buffs[] = new Intellect('Arcane Intellect');
     }
 }

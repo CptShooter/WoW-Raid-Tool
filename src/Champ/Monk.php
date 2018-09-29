@@ -19,9 +19,9 @@ class Monk extends Champ
     {
         $this->name = 'Monk';
         $this->classColor = [0 , 132, 103];
-        $this->specs[] = new Brewmaster();
-        $this->specs[] = new Mistweaver();
-        $this->specs[] = new Windwalker();
+        $this->specs['Brewmaster'] = new Brewmaster();
+        $this->specs['Mistweaver'] = new Mistweaver();
+        $this->specs['Windwalker'] = new Windwalker();
         $this->buffs[] = new PhysicalDamage('Mystic Touch');
     }
 }

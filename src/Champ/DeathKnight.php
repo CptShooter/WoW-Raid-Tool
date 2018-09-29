@@ -18,9 +18,9 @@ class DeathKnight extends Champ
     {
         $this->name = 'Death Knight';
         $this->classColor = [196 , 30, 59];
-        $this->specs[] = new Blood();
-        $this->specs[] = new Frost();
-        $this->specs[] = new Unholy();
+        $this->specs['Blood'] = new Blood();
+        $this->specs['Frost'] = new Frost();
+        $this->specs['Unholy'] = new Unholy();
         $this->buffs = [];
     }
 }

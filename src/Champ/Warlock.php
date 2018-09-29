@@ -18,9 +18,9 @@ class Warlock extends Champ
     {
         $this->name = 'Warlock';
         $this->classColor = [147 , 130, 201];
-        $this->specs[] = new Affliction();
-        $this->specs[] = new Demonology();
-        $this->specs[] = new Destruction();
+        $this->specs['Affliction'] = new Affliction();
+        $this->specs['Demonology'] = new Demonology();
+        $this->specs['Destruction'] = new Destruction();
         $this->buffs = [];
     }
 }

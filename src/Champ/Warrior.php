@@ -19,9 +19,9 @@ class Warrior extends Champ
     {
         $this->name = 'Warrior';
         $this->classColor = [198 , 155, 109];
-        $this->specs[] = new Arms();
-        $this->specs[] = new Fury();
-        $this->specs[] = new Protection();
+        $this->specs['Arms'] = new Arms();
+        $this->specs['Fury'] = new Fury();
+        $this->specs['Protection'] = new Protection();
         $this->buffs[] = new AttackPower('Battle Shout');
     }
 }

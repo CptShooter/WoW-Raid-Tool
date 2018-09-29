@@ -18,9 +18,9 @@ class Shaman extends Champ
     {
         $this->name = 'Shaman';
         $this->classColor = [35 , 89, 255];
-        $this->specs[] = new Elemental();
-        $this->specs[] = new Enhancement();
-        $this->specs[] = new Restoration();
+        $this->specs['Elemental'] = new Elemental();
+        $this->specs['Enhancement'] = new Enhancement();
+        $this->specs['Restoration'] = new Restoration();
         $this->buffs = [];
     }
 }

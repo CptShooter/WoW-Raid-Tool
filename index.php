@@ -44,7 +44,7 @@ $classes = $raid->getClasses();
                 <?php foreach($classes as $champ) { ?>
                     <?php /** @var \Raid\Champ\Spec\Spec $spec */ ?>
                     <?php foreach($champ->getSpecs() as $spec) { ?>
-                        <div class="champ" data-class="<?= $champ->getName().' '.$spec->getName(); ?>" style="color: <?= $champ->getClassColor(); ?>">
+                        <div class="champ" data-champ="<?= $champ->getName(); ?>" data-spec="<?= $spec->getName(); ?>" style="color: <?= $champ->getClassColor(); ?>">
                             <div class="spec">
                                 <img src="<?= $spec->getIcon(); ?>">
                                 <div class="name"><?= $spec->getName(); ?></div>
@@ -76,11 +76,11 @@ $classes = $raid->getClasses();
                 <span>Buffs</span>
             </div>
             <div class="buffs">
-                <div>Intellect</div>
-                <div>Stamina</div>
-                <div>AttackPower</div>
-                <div>MagicDamage</div>
-                <div>PhysicalDamage</div>
+                <div><span class="number" id="Intellect">0</span> Intellect</div>
+                <div><span class="number" id="Stamina">0</span> Stamina</div>
+                <div><span class="number" id="AttackPower">0</span> Attack Power</div>
+                <div><span class="number" id="MagicDamage">0</span> Magic Damage</div>
+                <div><span class="number" id="PhysicalDamage">0</span> Physical Damage</div>
             </div>
             <div class="count-name">
                 <span>Count</span>

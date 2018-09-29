@@ -18,9 +18,9 @@ class Paladin extends Champ
     {
         $this->name = 'Paladin';
         $this->classColor = [244 , 140, 186];
-        $this->specs[] = new Holy();
-        $this->specs[] = new Protection();
-        $this->specs[] = new Retribution();
+        $this->specs['Holy'] = new Holy();
+        $this->specs['Protection'] = new Protection();
+        $this->specs['Retribution'] = new Retribution();
         $this->buffs = [];
     }
 }

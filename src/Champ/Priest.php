@@ -19,9 +19,9 @@ class Priest extends Champ
     {
         $this->name = 'Priest';
         $this->classColor = [255 , 255, 255];
-        $this->specs[] = new Discipline();
-        $this->specs[] = new Holy();
-        $this->specs[] = new Shadow();
+        $this->specs['Discipline'] = new Discipline();
+        $this->specs['Holy'] = new Holy();
+        $this->specs['Shadow'] = new Shadow();
         $this->buffs[] = new Stamina('Power Word: Fortitude');
     }
 }

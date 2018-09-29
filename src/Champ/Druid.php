@@ -19,10 +19,10 @@ class Druid extends Champ
     {
         $this->name = 'Druid';
         $this->classColor = [255 , 124, 10];
-        $this->specs[] = new Balance();
-        $this->specs[] = new Feral();
-        $this->specs[] = new Guardian();
-        $this->specs[] = new Restoration();
+        $this->specs['Balance'] = new Balance();
+        $this->specs['Feral'] = new Feral();
+        $this->specs['Guardian'] = new Guardian();
+        $this->specs['Restoration'] = new Restoration();
         $this->buffs = [];
     }
 }

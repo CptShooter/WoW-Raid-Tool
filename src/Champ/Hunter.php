@@ -18,9 +18,9 @@ class Hunter extends Champ
     {
         $this->name = 'Hunter';
         $this->classColor = [170 , 211, 114];
-        $this->specs[] = new BeastMastery();
-        $this->specs[] = new Marksmanship();
-        $this->specs[] = new Survival();
+        $this->specs['Beast Mastery'] = new BeastMastery();
+        $this->specs['Marksmanship'] = new Marksmanship();
+        $this->specs['Survival'] = new Survival();
         $this->buffs = [];
     }
 }

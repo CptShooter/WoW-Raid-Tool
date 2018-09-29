@@ -18,8 +18,8 @@ class DemonHunter extends Champ
     {
         $this->name = 'Demon Hunter';
         $this->classColor = [163 , 48, 201];
-        $this->specs[] = new Havoc();
-        $this->specs[] = new Vengeance();
+        $this->specs['Havoc'] = new Havoc();
+        $this->specs['Vengeance'] = new Vengeance();
         $this->buffs[] = new MagicDamage('Chaos Brand');
     }
 }

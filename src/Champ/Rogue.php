@@ -18,9 +18,9 @@ class Rogue extends Champ
     {
         $this->name = 'Rogue';
         $this->classColor = [255 , 244, 104];
-        $this->specs[] = new Assassination();
-        $this->specs[] = new Outlaw();
-        $this->specs[] = new Subtelty();
+        $this->specs['Assassination'] = new Assassination();
+        $this->specs['Outlaw'] = new Outlaw();
+        $this->specs['Subtelty'] = new Subtelty();
         $this->buffs = [];
     }
 }
