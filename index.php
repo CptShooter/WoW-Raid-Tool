@@ -14,7 +14,7 @@ $classes = $raid->getClasses();
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/ui-darkness/jquery-ui.css">
-    <link rel="stylesheet" href="main1.0.css">
+    <link rel="stylesheet" href="main1.1.css">
 
     <title>Raid Composition - WoW 8.0.1</title>
 </head>
@@ -70,6 +70,11 @@ $classes = $raid->getClasses();
                     <?php } ?>
                 </div>
             <?php } ?>
+            <div id="footer">
+                <span>Created by <a href="https://cptshooter.pl">CptShooter</a></span> |
+                <span>Inspired by <a href="https://raidcomp.mmo-champion.com/">RaidComp</a></span><br/>
+                <span>Powered by <a href="https://jquery.com/">jQuery</a>, <a href="https://jqueryui.com/">jQueryUI</a> and icons from <a href="https://www.wowhead.com">WoWHead</a></span>
+            </div>
         </div>
         <div class="col">
             <div class="buffs-name">
@@ -105,15 +110,6 @@ $classes = $raid->getClasses();
                 <div><span class="number" id="RDPS">0</span> Range DPS</div>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col"></div>
-        <div class="col-8" id="footer">
-            <span>Created by <a href="https://cptshooter.pl">CptShooter</a></span> |
-            <span>Inspired by <a href="https://raidcomp.mmo-champion.com/">RaidComp</a></span><br/>
-            <span>Powered by <a href="https://jquery.com/">jQuery</a>, <a href="https://jqueryui.com/">jQueryUI</a> and icons from <a href="https://www.wowhead.com">WoWHead</a></span>
-        </div>
-        <div class="col"></div>
     </div>
 </div>
 
