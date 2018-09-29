@@ -1,0 +1,142 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: Verdana, sans-serif;
+}
+
+.container:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.1;
+    background-image: url('world-of-warcraft-battle-for-azeroth.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+#menu{
+    margin-bottom: 20px;
+}
+
+#logo{
+
+}
+
+#info span{
+    float:right;
+}
+
+#footer{
+    text-align: center;
+    bottom: 0;
+    position: absolute;
+}
+
+#champions{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.champ{
+    background-color: #292929;
+    width: 120px;
+    height: 20px;
+    border-color: #444444;
+    border-style: solid;
+    border-width: 1px;
+    display: table;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.space{
+    margin-top: 8px;
+}
+
+.spec img{
+    float:left;
+    margin: 1px;
+}
+
+.spec .name{
+    float:left;
+    font-size: 11px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.group{
+    width: 120px;
+}
+
+.group.left ul{
+    float: right;
+}
+
+.group.right ul{
+    margin-left: -40px;
+}
+
+.group-name{
+    margin-top: 15px;
+    color: #ffd307;
+    font-weight: bold;
+}
+
+.group.left .group-name{
+    float:right;
+    margin-right: 40px;
+}
+
+.group.right .group-name{
+    margin-left: 20px;
+}
+
+.spot{
+    background-color: #292929;
+    width: 120px;
+    height: 20px;
+    border-color: #444444;
+    border-style: solid;
+    border-width: 1px;
+    list-style-type: none;
+}
+
+#clear{
+    float: right;
+}
+
+.buffs, .count, .setup{
+    background-color: #292929;
+    width: 200px;
+    border-color: #444444;
+    border-style: solid;
+    border-width: 1px;
+    padding: 4px;
+}
+
+.buffs, .count, .setup div{
+    margin: 2px;
+    font-size: 12px;
+    color: #7e7e7e;
+}
+
+.buffs-name, .count-name, .setup-name{
+    color: #ffd307;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.number{
+    font-weight: bold;
+}

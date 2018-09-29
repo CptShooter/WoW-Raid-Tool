@@ -1,0 +1,15 @@
+{
+    "name": "cptshooter/raid",
+    "description": "RaidComposition",
+    "authors": [
+        {
+            "name": "CptShooter",
+            "email": "cptshooter12@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Raid\\": "src"
+        }
+    }
+}
