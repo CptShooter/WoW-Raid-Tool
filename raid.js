@@ -101,7 +101,6 @@ function calculateComp()
 
 function appendData(id, number, color)
 {
-    console.log(id);
     let spanEl = $('#'+id);
     if(color){
         if(number > 0){
