@@ -114,6 +114,9 @@ body{
 
 #clear{
     float: right;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 3px;
 }
 
 .buffs, .count, .setup{
