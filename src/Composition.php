@@ -9,6 +9,7 @@
 namespace Raid;
 
 use Raid\Champ\Buffs\AttackPower;
+use Raid\Champ\Buffs\BloodlustHeroism;
 use Raid\Champ\Buffs\Buff;
 use Raid\Champ\Buffs\Intellect;
 use Raid\Champ\Buffs\MagicDamage;
@@ -64,6 +65,7 @@ class Composition
 
     public function calculateComp($data)
     {
+        $buff['BloodlustHeroism'] = 0;
         $buff['AttackPower'] = 0;
         $buff['Intellect'] = 0;
         $buff['Stamina'] = 0;
@@ -109,6 +111,9 @@ class Composition
                         break;
                     case $b instanceof PhysicalDamage:
                         $buff['PhysicalDamage']++;
+                        break;
+                    case $b instanceof BloodlustHeroism:
+                        $buff['BloodlustHeroism']++;
                         break;
                 }
             }

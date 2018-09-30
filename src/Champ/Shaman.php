@@ -8,6 +8,7 @@
 
 namespace Raid\Champ;
 
+use Raid\Champ\Buffs\BloodlustHeroism;
 use Raid\Champ\Spec\Shaman\Elemental;
 use Raid\Champ\Spec\Shaman\Enhancement;
 use Raid\Champ\Spec\Shaman\Restoration;
@@ -21,6 +22,6 @@ class Shaman extends Champ
         $this->specs['Elemental'] = new Elemental();
         $this->specs['Enhancement'] = new Enhancement();
         $this->specs['Restoration'] = new Restoration();
-        $this->buffs = [];
+        $this->buffs[] = new BloodlustHeroism('Bloodlust-Heroism');
     }
 }

@@ -8,6 +8,7 @@
 
 namespace Raid\Champ;
 
+use Raid\Champ\Buffs\BloodlustHeroism;
 use Raid\Champ\Buffs\Intellect;
 use Raid\Champ\Spec\Mage\Arcane;
 use Raid\Champ\Spec\Mage\Fire;
@@ -23,5 +24,6 @@ class Mage extends Champ
         $this->specs['Fire'] = new Fire();
         $this->specs['Frost'] = new Frost();
         $this->buffs[] = new Intellect('Arcane Intellect');
+        $this->buffs[] = new BloodlustHeroism('Time Warp');
     }
 }

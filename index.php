@@ -81,6 +81,7 @@ $classes = $raid->getClasses();
                 <span>Buffs</span>
             </div>
             <div class="buffs">
+                <div><span class="number" id="BloodlustHeroism">0</span> Bloodlust / Heroism</div>
                 <div><span class="number" id="Intellect">0</span> Intellect</div>
                 <div><span class="number" id="Stamina">0</span> Stamina</div>
                 <div><span class="number" id="AttackPower">0</span> Attack Power</div>
