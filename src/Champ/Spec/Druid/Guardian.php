@@ -14,8 +14,9 @@ class Guardian extends Spec
 {
     public function __construct()
     {
+        $this->tag = 'h';
         $this->name = 'Guardian';
-        $this->icon = 'https://wow.zamimg.com/images/wow/icons/tiny/ability_racial_bearform.gif';
+        $this->icon = 'ability_racial_bearform.gif';
         $this->type = 'TANK';
         $this->dispelCurse          = true;
         $this->dispelDisease        = false;

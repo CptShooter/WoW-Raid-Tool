@@ -14,8 +14,9 @@ class Outlaw extends Spec
 {
     public function __construct()
     {
+        $this->tag = '1';
         $this->name = 'Outlaw';
-        $this->icon = 'https://wow.zamimg.com/images/wow/icons/tiny/ability_backstab.gif';
+        $this->icon = 'ability_backstab.gif';
         $this->type = 'MDPS';
         $this->dispelCurse          = false;
         $this->dispelDisease        = false;

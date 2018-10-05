@@ -14,8 +14,9 @@ class Enhancement extends Spec
 {
     public function __construct()
     {
+        $this->tag = '4';
         $this->name = 'Enhancement';
-        $this->icon = 'https://wow.zamimg.com/images/wow/icons/tiny/spell_nature_lightningshield.gif';
+        $this->icon = 'spell_nature_lightningshield.gif';
         $this->type = 'MDPS';
         $this->dispelCurse          = true;
         $this->dispelDisease        = false;

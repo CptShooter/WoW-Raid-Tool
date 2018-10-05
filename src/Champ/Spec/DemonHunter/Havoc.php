@@ -14,8 +14,9 @@ class Havoc extends Spec
 {
     public function __construct()
     {
+        $this->tag = 'd';
         $this->name = 'Havoc';
-        $this->icon = 'https://wow.zamimg.com/images/wow/icons/tiny/ability_demonhunter_specdps.gif';
+        $this->icon = 'ability_demonhunter_specdps.gif';
         $this->type = 'MDPS';
         $this->dispelCurse          = false;
         $this->dispelDisease        = false;

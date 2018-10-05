@@ -14,8 +14,9 @@ class Frost extends Spec
 {
     public function __construct()
     {
+        $this->tag = 'o';
         $this->name = 'Frost';
-        $this->icon = 'https://wow.zamimg.com/images/wow/icons/tiny/spell_frost_frostbolt02.gif';
+        $this->icon = 'spell_frost_frostbolt02.gif';
         $this->type = 'RDPS';
         $this->dispelCurse          = true;
         $this->dispelDisease        = false;

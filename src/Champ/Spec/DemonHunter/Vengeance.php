@@ -14,8 +14,9 @@ class Vengeance extends Spec
 {
     public function __construct()
     {
+        $this->tag = 'e';
         $this->name = 'Vengeance';
-        $this->icon = 'https://wow.zamimg.com/images/wow/icons/tiny/ability_demonhunter_spectank.gif';
+        $this->icon = 'ability_demonhunter_spectank.gif';
         $this->type = 'TANK';
         $this->dispelCurse          = false;
         $this->dispelDisease        = false;

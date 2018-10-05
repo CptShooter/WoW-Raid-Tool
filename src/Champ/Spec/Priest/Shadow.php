@@ -14,8 +14,9 @@ class Shadow extends Spec
 {
     public function __construct()
     {
+        $this->tag = 'y';
         $this->name = 'Shadow';
-        $this->icon = 'https://wow.zamimg.com/images/wow/icons/tiny/spell_shadow_shadowwordpain.gif';
+        $this->icon = 'spell_shadow_shadowwordpain.gif';
         $this->type = 'RDPS';
         $this->dispelCurse          = false;
         $this->dispelDisease        = true;

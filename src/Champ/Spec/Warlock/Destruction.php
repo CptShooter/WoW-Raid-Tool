@@ -14,8 +14,9 @@ class Destruction extends Spec
 {
     public function __construct()
     {
+        $this->tag = '8';
         $this->name = 'Destruction';
-        $this->icon = 'https://wow.zamimg.com/images/wow/icons/tiny/spell_shadow_rainoffire.gif';
+        $this->icon = 'spell_shadow_rainoffire.gif';
         $this->type = 'RDPS';
         $this->dispelCurse          = false;
         $this->dispelDisease        = false;

@@ -14,8 +14,9 @@ class Marksmanship extends Spec
 {
     public function __construct()
     {
+        $this->tag = 'k';
         $this->name = 'Marksmanship';
-        $this->icon = 'https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_focusedaim.gif';
+        $this->icon = 'ability_hunter_focusedaim.gif';
         $this->type = 'RDPS';
         $this->dispelCurse          = false;
         $this->dispelDisease        = false;

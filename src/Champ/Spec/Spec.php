@@ -15,6 +15,9 @@ namespace Raid\Champ\Spec;
 abstract class Spec
 {
     /** @var string */
+    protected $tag;
+
+    /** @var string */
     protected $name;
 
     /** @var string */
@@ -53,6 +56,7 @@ abstract class Spec
     public function toArray()
     {
         return [
+            'tag' => $this->tag,
             'name' => $this->name,
             'icon' => $this->icon,
             'type' => $this->type,
@@ -65,6 +69,14 @@ abstract class Spec
             'purge' => $this->purge,
             'interrupt' => $this->interrupt
         ];
+    }
+
+    /**
+     * @return string
+     */
+    public function getTag()
+    {
+        return $this->tag;
     }
 
     /**

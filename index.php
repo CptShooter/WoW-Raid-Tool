@@ -3,6 +3,7 @@ require_once 'vendor/autoload.php';
 
 $raid = new \Raid\Composition();
 $classes = $raid->getClasses();
+$fromLink = $raid->getFromLink();
 ?>
 <!doctype html>
 <html lang="en">
@@ -14,7 +15,7 @@ $classes = $raid->getClasses();
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/ui-darkness/jquery-ui.css">
-    <link rel="stylesheet" href="main1.3.css">
+    <link rel="stylesheet" href="main1.4.css">
 
     <title>Raid Composition - WoW 8.0.1</title>
 </head>
@@ -27,6 +28,7 @@ $classes = $raid->getClasses();
         <div class="col-6" id="info">
             <div class="row">
                 <div class="col">
+                    <a href="#" id="link">Link</a>
                 </div>
                 <div class="col-3">
                     <a href="#" id="clear">Clear</a>
@@ -46,7 +48,7 @@ $classes = $raid->getClasses();
                     <?php foreach($champ->getSpecs() as $spec) { ?>
                         <div class="champ" data-champ="<?= $champ->getName(); ?>" data-spec="<?= $spec->getName(); ?>" style="color: <?= $champ->getClassColor(); ?>">
                             <div class="spec">
-                                <img src="<?= $spec->getIcon(); ?>">
+                                <img src="/img/<?= $spec->getIcon(); ?>">
                                 <div class="name"><?= $spec->getName(); ?></div>
                             </div>
                         </div>
@@ -56,14 +58,24 @@ $classes = $raid->getClasses();
             </div>
         </div>
         <div class="col-6">
-            <?php for($i = 1, $g = 1; $i <= 4; $i++) { ?>
+            <?php for($i = 1, $g = 1, $count = 1; $i <= 4; $i++) { ?>
                 <div class="row">
                     <?php for($j = 1; $j <= 2; $j++, $g++) { ?>
                         <div class="col group <?php if($g%2 != 0) echo 'left'; else echo 'right'; ?>">
                             <div class="group-name">Group <?= $g; ?></div>
                             <ul>
-                            <?php for($k = 1; $k <= 5; $k++){ ?>
-                                <li class="spot"></li>
+                            <?php for($k = 1; $k <= 5; $k++, $count++){ ?>
+                                <li class="spot" data-grp="<?= $count; ?>">
+                                    <?php if(isset($fromLink[$count])) { ?>
+                                        <?php $champ = $fromLink[$count]['champ']; $spec = $fromLink[$count]['spec']; ?>
+                                        <div class="champ from-link" data-champ="<?= $champ->getName(); ?>" data-spec="<?= $spec->getName(); ?>" style="color: <?= $champ->getClassColor(); ?>">
+                                            <div class="spec">
+                                                <img src="/img/<?= $spec->getIcon(); ?>">
+                                                <div class="name"><?= $spec->getName(); ?></div>
+                                            </div>
+                                        </div>
+                                    <?php } ?>
+                                </li>
                             <?php } ?>
                             </ul>
                         </div>
@@ -73,7 +85,7 @@ $classes = $raid->getClasses();
             <div id="footer">
                 <span>Created by <a href="https://cptshooter.pl">CptShooter</a></span> |
                 <span>Inspired by <a href="https://raidcomp.mmo-champion.com/">RaidComp</a></span><br/>
-                <span>Powered by <a href="https://jquery.com/">jQuery</a>, <a href="https://jqueryui.com/">jQueryUI</a> and icons from <a href="https://www.wowhead.com">WoWHead</a></span>
+                <span>Powered by <a href="https://jquery.com/">jQuery</a>, <a href="https://jqueryui.com/">jQueryUI</a> and icons from <a href="https://www.worldofwarcraft.com">World of Warcraft</a></span>
             </div>
         </div>
         <div class="col">
@@ -119,6 +131,6 @@ $classes = $raid->getClasses();
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-<script src="main1.0.js"></script>
+<script src="main1.1.js"></script>
 </body>
 </html>

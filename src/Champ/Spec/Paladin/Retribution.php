@@ -14,8 +14,9 @@ class Retribution extends Spec
 {
     public function __construct()
     {
+        $this->tag = 'v';
         $this->name = 'Retribution';
-        $this->icon = 'https://wow.zamimg.com/images/wow/icons/tiny/spell_holy_auraoflight.gif';
+        $this->icon = 'spell_holy_auraoflight.gif';
         $this->type = 'MDPS';
         $this->dispelCurse          = false;
         $this->dispelDisease        = true;

@@ -14,8 +14,9 @@ class Fire extends Spec
 {
     public function __construct()
     {
+        $this->tag = 'n';
         $this->name = 'Fire';
-        $this->icon = 'https://wow.zamimg.com/images/wow/icons/tiny/spell_fire_firebolt02.gif';
+        $this->icon = 'spell_fire_firebolt02.gif';
         $this->type = 'RDPS';
         $this->dispelCurse          = true;
         $this->dispelDisease        = false;

@@ -14,8 +14,9 @@ class Discipline extends Spec
 {
     public function __construct()
     {
+        $this->tag = 'w';
         $this->name = 'Discipline';
-        $this->icon = 'https://wow.zamimg.com/images/wow/icons/tiny/spell_holy_powerwordshield.gif';
+        $this->icon = 'spell_holy_powerwordshield.gif';
         $this->type = 'HEALER';
         $this->dispelCurse          = false;
         $this->dispelDisease        = true;

@@ -14,8 +14,9 @@ class Windwalker extends Spec
 {
     public function __construct()
     {
+        $this->tag = 's';
         $this->name = 'Windwalker';
-        $this->icon = 'https://wow.zamimg.com/images/wow/icons/tiny/monk_stance_whitetiger.gif';
+        $this->icon = 'monk_stance_whitetiger.gif';
         $this->type = 'MDPS';
         $this->dispelCurse          = false;
         $this->dispelDisease        = true;

@@ -14,8 +14,9 @@ class Fury extends Spec
 {
     public function __construct()
     {
+        $this->tag = 'q';
         $this->name = 'Fury';
-        $this->icon = 'https://wow.zamimg.com/images/wow/icons/tiny/ability_warrior_innerrage.gif';
+        $this->icon = 'ability_warrior_innerrage.gif';
         $this->type = 'MDPS';
         $this->dispelCurse          = false;
         $this->dispelDisease        = false;

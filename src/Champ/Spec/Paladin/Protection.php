@@ -14,8 +14,9 @@ class Protection extends Spec
 {
     public function __construct()
     {
+        $this->tag = 'u';
         $this->name = 'Protection';
-        $this->icon = 'https://wow.zamimg.com/images/wow/icons/tiny/ability_paladin_shieldofthetemplar.gif';
+        $this->icon = 'ability_paladin_shieldofthetemplar.gif';
         $this->type = 'TANK';
         $this->dispelCurse          = false;
         $this->dispelDisease        = true;

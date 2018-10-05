@@ -14,8 +14,9 @@ class Restoration extends Spec
 {
     public function __construct()
     {
+        $this->tag = '5';
         $this->name = 'Restoration';
-        $this->icon = 'https://wow.zamimg.com/images/wow/icons/tiny/spell_nature_magicimmunity.gif';
+        $this->icon = 'spell_nature_magicimmunity.gif';
         $this->type = 'HEALER';
         $this->dispelCurse          = true;
         $this->dispelDisease        = false;

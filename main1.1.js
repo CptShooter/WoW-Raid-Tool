@@ -7,8 +7,11 @@ $(document).ready(function() {
         cursor: "pointer"
     }).css({
         'top': -3,
-        'left': -1
+        'left': -1,
+        'position': 'relative'
     });
+
+    $( ".from-link").draggable( "option", "helper", "original");
 
     $( ".spot" ).droppable({
         accept: ".champ",
@@ -67,13 +70,15 @@ $(document).ready(function() {
         $(".group .champ").each(function(){ $(this).remove() });
         calculateComp();
     });
+
+    calculateComp();
 });
 
 function calculateComp()
 {
     let group = [];
     $(".group .champ").each(function(){
-        let champ = {'champ': $(this).data('champ'), 'spec': $(this).data('spec')};
+        let champ = {'champ': $(this).data('champ'), 'spec': $(this).data('spec'), 'grp': $(this).parent().data('grp')};
         group.push(champ);
     });
 
@@ -96,6 +101,7 @@ function calculateComp()
             appendData(key, value, false);
         });
 
+        $('a#link').attr('href', '/?c='+info.link);
     });
 }
 

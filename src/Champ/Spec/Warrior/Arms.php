@@ -14,8 +14,9 @@ class Arms extends Spec
 {
     public function __construct()
     {
+        $this->tag = '9';
         $this->name = 'Arms';
-        $this->icon = 'https://wow.zamimg.com/images/wow/icons/tiny/ability_warrior_savageblow.gif';
+        $this->icon = 'ability_warrior_savageblow.gif';
         $this->type = 'MDPS';
         $this->dispelCurse          = false;
         $this->dispelDisease        = false;

@@ -14,8 +14,9 @@ class Brewmaster extends Spec
 {
     public function __construct()
     {
+        $this->tag = 'p';
         $this->name = 'Brewmaster';
-        $this->icon = 'https://wow.zamimg.com/images/wow/icons/tiny/monk_stance_drunkenox.gif';
+        $this->icon = 'monk_stance_drunkenox.gif';
         $this->type = 'TANK';
         $this->dispelCurse          = false;
         $this->dispelDisease        = true;

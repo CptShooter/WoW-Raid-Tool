@@ -14,8 +14,9 @@ class BeastMastery extends Spec
 {
     public function __construct()
     {
+        $this->tag = 'j';
         $this->name = 'Beast Mastery';
-        $this->icon = 'https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_bestialdiscipline.gif';
+        $this->icon = 'ability_hunter_bestialdiscipline.gif';
         $this->type = 'RDPS';
         $this->dispelCurse          = false;
         $this->dispelDisease        = false;

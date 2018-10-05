@@ -14,8 +14,9 @@ class Blood extends Spec
 {
     public function __construct()
     {
+        $this->tag = 'a';
         $this->name = 'Blood';
-        $this->icon = 'https://wow.zamimg.com/images/wow/icons/tiny/spell_deathknight_bloodpresence.gif';
+        $this->icon = 'spell_deathknight_bloodpresence.gif';
         $this->type = 'TANK';
         $this->dispelCurse          = false;
         $this->dispelDisease        = false;

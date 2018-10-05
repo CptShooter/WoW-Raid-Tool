@@ -14,8 +14,9 @@ class Feral extends Spec
 {
     public function __construct()
     {
+        $this->tag = 'g';
         $this->name = 'Feral';
-        $this->icon = 'https://wow.zamimg.com/images/wow/icons/tiny/ability_druid_catform.gif';
+        $this->icon = 'ability_druid_catform.gif';
         $this->type = 'MDPS';
         $this->dispelCurse          = true;
         $this->dispelDisease        = false;

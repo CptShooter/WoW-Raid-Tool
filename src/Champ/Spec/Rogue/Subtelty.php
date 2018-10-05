@@ -14,8 +14,9 @@ class Subtelty extends Spec
 {
     public function __construct()
     {
+        $this->tag = '2';
         $this->name = 'Subtelty';
-        $this->icon = 'https://wow.zamimg.com/images/wow/icons/tiny/ability_stealth.gif';
+        $this->icon = 'ability_stealth.gif';
         $this->type = 'MDPS';
         $this->dispelCurse          = false;
         $this->dispelDisease        = false;

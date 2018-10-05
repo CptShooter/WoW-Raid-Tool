@@ -112,7 +112,7 @@ body{
     list-style-type: none;
 }
 
-#clear{
+#clear, #link{
     float: right;
     font-size: 12px;
     font-weight: bold;

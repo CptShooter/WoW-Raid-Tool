@@ -14,8 +14,9 @@ class Survival extends Spec
 {
     public function __construct()
     {
+        $this->tag = 'l';
         $this->name = 'Survival';
-        $this->icon = 'https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_camouflage.gif';
+        $this->icon = 'ability_hunter_camouflage.gif';
         $this->type = 'RDPS';
         $this->dispelCurse          = false;
         $this->dispelDisease        = false;

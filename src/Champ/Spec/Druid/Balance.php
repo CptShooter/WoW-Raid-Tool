@@ -14,8 +14,9 @@ class Balance extends Spec
 {
     public function __construct()
     {
+        $this->tag = 'f';
         $this->name = 'Balance';
-        $this->icon = 'https://wow.zamimg.com/images/wow/icons/tiny/spell_nature_starfall.gif';
+        $this->icon = 'spell_nature_starfall.gif';
         $this->type = 'RDPS';
         $this->dispelCurse          = true;
         $this->dispelDisease        = false;

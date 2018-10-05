@@ -63,6 +63,37 @@ class Composition
         return $result;
     }
 
+    private function getClassesAndSpecsByTag()
+    {
+        $this->classes = $this->getClasses();
+
+        $tags = [];
+        /** @var Champ $class */
+        foreach($this->classes as $class){
+            /** @var Spec $spec */
+            foreach($class->getSpecs() as $spec){
+                $tags[$spec->getTag()] = ['champ' => $class, 'spec' => $spec];
+            }
+        }
+        return $tags;
+    }
+
+    public function getFromLink()
+    {
+        $classesFromLink = [];
+        if(isset($_REQUEST['c'])) {
+            $link = str_split($_REQUEST['c']);
+            $tags = $this->getClassesAndSpecsByTag();
+
+            foreach ($link as $key => $tag) {
+                if (isset($tags[$tag])) {
+                    $classesFromLink[$key + 1] = $tags[$tag];
+                }
+            }
+        }
+        return $classesFromLink;
+    }
+
     public function calculateComp($data)
     {
         $buff['BloodlustHeroism'] = 0;
@@ -87,6 +118,12 @@ class Composition
         $setup['RDPS'] = 0;
 
         $this->classes = $this->getClasses();
+
+        // Init group list
+        $groupList = [];
+        for($i = 1; $i <= 40; $i++){
+            $groupList[$i] = 0;
+        }
 
         foreach($data as $d)
         {
@@ -133,12 +170,27 @@ class Composition
             $count['Interrupt'] += (int) $spec->isInterrupt();
 
             $setup[$spec->getType()]++;
+
+            $groupId = (int) $d['grp'];
+            $groupList[$groupId] = $spec->getTag();
         }
 
         echo json_encode([
             'buffs' => $buff,
             'counts' => $count,
-            'setup' => $setup
+            'setup' => $setup,
+            'link' => $this->groupListToString($groupList)
         ]);
+    }
+
+    private function groupListToString($groupList)
+    {
+        $link = '';
+        ksort($groupList);
+        foreach($groupList as $tag)
+        {
+            $link .= $tag;
+        }
+        return $link;
     }
 }

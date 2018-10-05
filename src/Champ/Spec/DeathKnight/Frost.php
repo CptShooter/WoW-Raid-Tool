@@ -14,9 +14,10 @@ class Frost extends Spec
 {
     public function __construct()
     {
+        $this->tag = 'b';
         $this->name = 'Frost';
         $this->type = 'MDPS';
-        $this->icon = 'https://wow.zamimg.com/images/wow/icons/tiny/spell_deathknight_frostpresence.gif';
+        $this->icon = 'spell_deathknight_frostpresence.gif';
         $this->dispelCurse          = false;
         $this->dispelDisease        = false;
         $this->dispelPoison         = false;

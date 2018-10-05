@@ -14,8 +14,9 @@ class Elemental extends Spec
 {
     public function __construct()
     {
+        $this->tag = '3';
         $this->name = 'Elemental';
-        $this->icon = 'https://wow.zamimg.com/images/wow/icons/tiny/spell_nature_lightning.gif';
+        $this->icon = 'spell_nature_lightning.gif';
         $this->type = 'RDPS';
         $this->dispelCurse          = true;
         $this->dispelDisease        = false;

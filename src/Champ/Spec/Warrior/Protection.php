@@ -14,8 +14,9 @@ class Protection extends Spec
 {
     public function __construct()
     {
+        $this->tag = 'Q';
         $this->name = 'Protection';
-        $this->icon = 'https://wow.zamimg.com/images/wow/icons/tiny/ability_warrior_defensivestance.gif';
+        $this->icon = 'ability_warrior_defensivestance.gif';
         $this->type = 'TANK';
         $this->dispelCurse          = false;
         $this->dispelDisease        = false;

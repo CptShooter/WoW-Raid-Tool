@@ -14,8 +14,9 @@ class Arcane extends Spec
 {
     public function __construct()
     {
+        $this->tag = 'm';
         $this->name = 'Arcane';
-        $this->icon = 'https://wow.zamimg.com/images/wow/icons/tiny/spell_holy_magicalsentry.gif';
+        $this->icon = 'spell_holy_magicalsentry.gif';
         $this->type = 'RDPS';
         $this->dispelCurse          = true;
         $this->dispelDisease        = false;

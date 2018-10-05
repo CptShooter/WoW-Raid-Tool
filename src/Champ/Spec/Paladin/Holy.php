@@ -14,8 +14,9 @@ class Holy extends Spec
 {
     public function __construct()
     {
+        $this->tag = 't';
         $this->name = 'Holy';
-        $this->icon = 'https://wow.zamimg.com/images/wow/icons/tiny/spell_holy_holybolt.gif';
+        $this->icon = 'spell_holy_holybolt.gif';
         $this->type = 'HEALER';
         $this->dispelCurse          = false;
         $this->dispelDisease        = true;

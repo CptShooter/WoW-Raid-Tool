@@ -14,8 +14,9 @@ class Assassination extends Spec
 {
     public function __construct()
     {
+        $this->tag = 'z';
         $this->name = 'Assassination';
-        $this->icon = 'https://wow.zamimg.com/images/wow/icons/tiny/ability_rogue_eviscerate.gif';
+        $this->icon = 'ability_rogue_eviscerate.gif';
         $this->type = 'MDPS';
         $this->dispelCurse          = false;
         $this->dispelDisease        = false;

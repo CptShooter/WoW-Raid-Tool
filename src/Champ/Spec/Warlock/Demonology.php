@@ -14,8 +14,9 @@ class Demonology extends Spec
 {
     public function __construct()
     {
+        $this->tag = '7';
         $this->name = 'Demonology';
-        $this->icon = 'https://wow.zamimg.com/images/wow/icons/tiny/spell_shadow_metamorphosis.gif';
+        $this->icon = 'spell_shadow_metamorphosis.gif';
         $this->type = 'RDPS';
         $this->dispelCurse          = false;
         $this->dispelDisease        = false;
