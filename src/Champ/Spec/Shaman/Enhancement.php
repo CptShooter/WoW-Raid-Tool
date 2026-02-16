@@ -16,12 +16,13 @@ class Enhancement extends Spec
     {
         $this->tag = '4';
         $this->name = 'Enhancement';
-        $this->icon = 'spell_nature_lightningshield.gif';
+        $this->icon = 'spell_shaman_improvedstormstrike.jpg';
         $this->type = 'MDPS';
         $this->dispelCurse          = true;
         $this->dispelDisease        = false;
         $this->dispelPoison         = false;
         $this->dispelMagic          = false;
+        $this->dispelBleed          = false;
         $this->removeEnrage         = false;
         $this->combatResurrection   = false;
         $this->purge                = true;

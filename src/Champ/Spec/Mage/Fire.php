@@ -16,12 +16,13 @@ class Fire extends Spec
     {
         $this->tag = 'n';
         $this->name = 'Fire';
-        $this->icon = 'spell_fire_firebolt02.gif';
+        $this->icon = 'spell_fire_firebolt02.jpg';
         $this->type = 'RDPS';
         $this->dispelCurse          = true;
         $this->dispelDisease        = false;
         $this->dispelPoison         = false;
         $this->dispelMagic          = false;
+        $this->dispelBleed          = false;
         $this->removeEnrage         = false;
         $this->combatResurrection   = false;
         $this->purge                = true;

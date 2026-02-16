@@ -16,14 +16,15 @@ class Holy extends Spec
     {
         $this->tag = 't';
         $this->name = 'Holy';
-        $this->icon = 'spell_holy_holybolt.gif';
+        $this->icon = 'spell_holy_holybolt.jpg';
         $this->type = 'HEALER';
         $this->dispelCurse          = false;
         $this->dispelDisease        = true;
         $this->dispelPoison         = true;
         $this->dispelMagic          = true;
+        $this->dispelBleed          = false;
         $this->removeEnrage         = false;
-        $this->combatResurrection   = false;
+        $this->combatResurrection   = true;
         $this->purge                = false;
         $this->interrupt            = false;
     }

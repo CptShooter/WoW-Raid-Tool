@@ -16,12 +16,13 @@ class Feral extends Spec
     {
         $this->tag = 'g';
         $this->name = 'Feral';
-        $this->icon = 'ability_druid_catform.gif';
+        $this->icon = 'ability_druid_catform.jpg';
         $this->type = 'MDPS';
         $this->dispelCurse          = true;
         $this->dispelDisease        = false;
         $this->dispelPoison         = true;
         $this->dispelMagic          = false;
+        $this->dispelBleed          = false;
         $this->removeEnrage         = true;
         $this->combatResurrection   = true;
         $this->purge                = false;

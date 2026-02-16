@@ -16,12 +16,13 @@ class Demonology extends Spec
     {
         $this->tag = '7';
         $this->name = 'Demonology';
-        $this->icon = 'spell_shadow_metamorphosis.gif';
+        $this->icon = 'spell_shadow_metamorphosis.jpg';
         $this->type = 'RDPS';
         $this->dispelCurse          = false;
         $this->dispelDisease        = false;
         $this->dispelPoison         = false;
-        $this->dispelMagic          = true;
+        $this->dispelMagic          = false;
+        $this->dispelBleed          = false;
         $this->removeEnrage         = false;
         $this->combatResurrection   = true;
         $this->purge                = false;

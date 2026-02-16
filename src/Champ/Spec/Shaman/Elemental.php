@@ -16,12 +16,13 @@ class Elemental extends Spec
     {
         $this->tag = '3';
         $this->name = 'Elemental';
-        $this->icon = 'spell_nature_lightning.gif';
+        $this->icon = 'spell_nature_lightning.jpg';
         $this->type = 'RDPS';
         $this->dispelCurse          = true;
         $this->dispelDisease        = false;
         $this->dispelPoison         = false;
         $this->dispelMagic          = false;
+        $this->dispelBleed          = false;
         $this->removeEnrage         = false;
         $this->combatResurrection   = false;
         $this->purge                = true;

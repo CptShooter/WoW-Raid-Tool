@@ -16,12 +16,13 @@ class Affliction extends Spec
     {
         $this->tag = '6';
         $this->name = 'Affliction';
-        $this->icon = 'spell_shadow_deathcoil.gif';
+        $this->icon = 'spell_shadow_deathcoil.jpg';
         $this->type = 'RDPS';
         $this->dispelCurse          = false;
         $this->dispelDisease        = false;
         $this->dispelPoison         = false;
-        $this->dispelMagic          = true;
+        $this->dispelMagic          = false;
+        $this->dispelBleed          = false;
         $this->removeEnrage         = false;
         $this->combatResurrection   = true;
         $this->purge                = false;

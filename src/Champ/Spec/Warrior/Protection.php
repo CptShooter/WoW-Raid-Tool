@@ -16,12 +16,13 @@ class Protection extends Spec
     {
         $this->tag = 'Q';
         $this->name = 'Protection';
-        $this->icon = 'ability_warrior_defensivestance.gif';
+        $this->icon = 'ability_warrior_defensivestance.jpg';
         $this->type = 'TANK';
         $this->dispelCurse          = false;
         $this->dispelDisease        = false;
         $this->dispelPoison         = false;
         $this->dispelMagic          = false;
+        $this->dispelBleed          = false;
         $this->removeEnrage         = false;
         $this->combatResurrection   = false;
         $this->purge                = false;

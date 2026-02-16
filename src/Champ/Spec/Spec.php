@@ -47,6 +47,9 @@ abstract class Spec
     /** @var boolean */
     protected $interrupt;
 
+    /** @var boolean */
+    protected $dispelBleed;
+
     /** @var */
     protected $type;
 
@@ -64,6 +67,7 @@ abstract class Spec
             'dispelDisease' => $this->dispelDisease,
             'dispelPoison' => $this->dispelPoison,
             'dispelMagic' => $this->dispelMagic,
+            'dispelBleed' => $this->dispelBleed,
             'removeEnrage' => $this->removeEnrage,
             'combatResurrection' => $this->combatResurrection,
             'purge' => $this->purge,
@@ -125,6 +129,14 @@ abstract class Spec
     public function isDispelMagic()
     {
         return $this->dispelMagic;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isDispelBleed()
+    {
+        return $this->dispelBleed;
     }
 
     /**
