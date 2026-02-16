@@ -16,12 +16,13 @@ class Discipline extends Spec
     {
         $this->tag = 'w';
         $this->name = 'Discipline';
-        $this->icon = 'spell_holy_powerwordshield.gif';
+        $this->icon = 'spell_holy_powerwordshield.jpg';
         $this->type = 'HEALER';
         $this->dispelCurse          = false;
         $this->dispelDisease        = true;
         $this->dispelPoison         = false;
         $this->dispelMagic          = true;
+        $this->dispelBleed          = false;
         $this->removeEnrage         = false;
         $this->combatResurrection   = false;
         $this->purge                = true;

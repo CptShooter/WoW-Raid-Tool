@@ -16,12 +16,13 @@ class Outlaw extends Spec
     {
         $this->tag = '1';
         $this->name = 'Outlaw';
-        $this->icon = 'ability_backstab.gif';
+        $this->icon = 'ability_rogue_waylay.jpg';
         $this->type = 'MDPS';
         $this->dispelCurse          = false;
         $this->dispelDisease        = false;
         $this->dispelPoison         = false;
         $this->dispelMagic          = false;
+        $this->dispelBleed          = false;
         $this->removeEnrage         = false;
         $this->combatResurrection   = false;
         $this->purge                = false;

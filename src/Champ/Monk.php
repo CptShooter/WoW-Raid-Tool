@@ -18,7 +18,7 @@ class Monk extends Champ
     public function __construct()
     {
         $this->name = 'Monk';
-        $this->classColor = [0 , 132, 103];
+        $this->classColor = [0, 255, 150];
         $this->specs['Brewmaster'] = new Brewmaster();
         $this->specs['Mistweaver'] = new Mistweaver();
         $this->specs['Windwalker'] = new Windwalker();

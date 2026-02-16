@@ -17,14 +17,15 @@ class Frost extends Spec
         $this->tag = 'b';
         $this->name = 'Frost';
         $this->type = 'MDPS';
-        $this->icon = 'spell_deathknight_frostpresence.gif';
+        $this->icon = 'spell_deathknight_frostpresence.jpg';
         $this->dispelCurse          = false;
         $this->dispelDisease        = false;
         $this->dispelPoison         = false;
         $this->dispelMagic          = false;
+        $this->dispelBleed          = false;
         $this->removeEnrage         = false;
         $this->combatResurrection   = true;
-        $this->purge                = true;
+        $this->purge                = false;
         $this->interrupt            = true;
     }
 }

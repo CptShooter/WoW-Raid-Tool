@@ -14,7 +14,7 @@ body{
     height: 100%;
     z-index: -1;
     opacity: 0.1;
-    background-image: url('world-of-warcraft-battle-for-azeroth.jpg');
+    background-image: url('wow-midnight.jpeg');
     background-repeat: no-repeat;
     background-position: 50% 0;
     -ms-background-size: cover;
@@ -119,7 +119,7 @@ body{
     margin-top: 3px;
 }
 
-.buffs, .count, .setup{
+.buffs, .debuffs, .count, .setup{
     background-color: #292929;
     width: 200px;
     border-color: #444444;
@@ -128,13 +128,13 @@ body{
     padding: 4px;
 }
 
-.buffs, .count, .setup div{
+.buffs, .debuffs, .count, .setup div{
     margin: 2px;
     font-size: 12px;
     color: #7e7e7e;
 }
 
-.buffs-name, .count-name, .setup-name{
+.buffs-name, .debuffs-name, .count-name, .setup-name{
     color: #ffd307;
     font-weight: bold;
     margin-top: 15px;

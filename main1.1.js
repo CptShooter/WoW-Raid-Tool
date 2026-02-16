@@ -93,6 +93,10 @@ function calculateComp()
             appendData(key, value, true);
         });
 
+        $.each(info.debuffs, function(key, value){
+            appendData(key, value, true);
+        });
+
         $.each(info.counts, function(key, value){
             appendData(key, value, false);
         });

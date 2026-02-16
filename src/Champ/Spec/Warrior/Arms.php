@@ -16,12 +16,13 @@ class Arms extends Spec
     {
         $this->tag = '9';
         $this->name = 'Arms';
-        $this->icon = 'ability_warrior_savageblow.gif';
+        $this->icon = 'ability_warrior_savageblow.jpg';
         $this->type = 'MDPS';
         $this->dispelCurse          = false;
         $this->dispelDisease        = false;
         $this->dispelPoison         = false;
         $this->dispelMagic          = false;
+        $this->dispelBleed          = false;
         $this->removeEnrage         = false;
         $this->combatResurrection   = false;
         $this->purge                = false;

@@ -17,14 +17,15 @@ class Unholy extends Spec
         $this->tag = 'c';
         $this->name = 'Unholy';
         $this->type = 'MDPS';
-        $this->icon = 'spell_deathknight_unholypresence.gif';
+        $this->icon = 'spell_deathknight_unholypresence.jpg';
         $this->dispelCurse          = false;
         $this->dispelDisease        = false;
         $this->dispelPoison         = false;
         $this->dispelMagic          = false;
+        $this->dispelBleed          = false;
         $this->removeEnrage         = false;
         $this->combatResurrection   = true;
-        $this->purge                = true;
+        $this->purge                = false;
         $this->interrupt            = true;
     }
 }

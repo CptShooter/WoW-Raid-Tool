@@ -16,12 +16,13 @@ class Assassination extends Spec
     {
         $this->tag = 'z';
         $this->name = 'Assassination';
-        $this->icon = 'ability_rogue_eviscerate.gif';
+        $this->icon = 'ability_rogue_deadlybrew.jpg';
         $this->type = 'MDPS';
         $this->dispelCurse          = false;
         $this->dispelDisease        = false;
         $this->dispelPoison         = false;
         $this->dispelMagic          = false;
+        $this->dispelBleed          = false;
         $this->removeEnrage         = false;
         $this->combatResurrection   = false;
         $this->purge                = false;

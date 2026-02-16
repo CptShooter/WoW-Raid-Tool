@@ -16,12 +16,13 @@ class Brewmaster extends Spec
     {
         $this->tag = 'p';
         $this->name = 'Brewmaster';
-        $this->icon = 'monk_stance_drunkenox.gif';
+        $this->icon = 'spell_monk_brewmaster_spec.jpg';
         $this->type = 'TANK';
         $this->dispelCurse          = false;
         $this->dispelDisease        = true;
         $this->dispelPoison         = true;
         $this->dispelMagic          = false;
+        $this->dispelBleed          = false;
         $this->removeEnrage         = false;
         $this->combatResurrection   = false;
         $this->purge                = false;

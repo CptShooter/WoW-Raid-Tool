@@ -16,12 +16,13 @@ class Fury extends Spec
     {
         $this->tag = 'q';
         $this->name = 'Fury';
-        $this->icon = 'ability_warrior_innerrage.gif';
+        $this->icon = 'ability_warrior_innerrage.jpg';
         $this->type = 'MDPS';
         $this->dispelCurse          = false;
         $this->dispelDisease        = false;
         $this->dispelPoison         = false;
         $this->dispelMagic          = false;
+        $this->dispelBleed          = false;
         $this->removeEnrage         = false;
         $this->combatResurrection   = false;
         $this->purge                = false;

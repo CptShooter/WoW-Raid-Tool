@@ -9,6 +9,7 @@
 namespace Raid\Champ;
 
 use Raid\Champ\Buffs\BloodlustHeroism;
+use Raid\Champ\Buffs\Damage;
 use Raid\Champ\Spec\Hunter\BeastMastery;
 use Raid\Champ\Spec\Hunter\Marksmanship;
 use Raid\Champ\Spec\Hunter\Survival;
@@ -23,5 +24,6 @@ class Hunter extends Champ
         $this->specs['Marksmanship'] = new Marksmanship();
         $this->specs['Survival'] = new Survival();
         $this->buffs[] = new BloodlustHeroism('Ancient Hysteria');
+        $this->buffs[] = new Damage('Hunter\'s Mark');
     }
 }

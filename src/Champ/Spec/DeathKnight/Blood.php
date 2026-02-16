@@ -16,15 +16,16 @@ class Blood extends Spec
     {
         $this->tag = 'a';
         $this->name = 'Blood';
-        $this->icon = 'spell_deathknight_bloodpresence.gif';
+        $this->icon = 'spell_deathknight_bloodpresence.jpg';
         $this->type = 'TANK';
         $this->dispelCurse          = false;
         $this->dispelDisease        = false;
         $this->dispelPoison         = false;
         $this->dispelMagic          = false;
+        $this->dispelBleed          = false;
         $this->removeEnrage         = false;
         $this->combatResurrection   = true;
-        $this->purge                = true;
+        $this->purge                = false;
         $this->interrupt            = true;
     }
 }
