@@ -16,15 +16,16 @@ class Vengeance extends Spec
     {
         $this->tag = 'e';
         $this->name = 'Vengeance';
-        $this->icon = 'ability_demonhunter_spectank.gif';
+        $this->icon = 'ability_demonhunter_spectank.jpg';
         $this->type = 'TANK';
         $this->dispelCurse          = false;
         $this->dispelDisease        = false;
         $this->dispelPoison         = false;
         $this->dispelMagic          = false;
+        $this->dispelBleed          = false;
         $this->removeEnrage         = false;
         $this->combatResurrection   = false;
-        $this->purge                = false;
+        $this->purge                = true;
         $this->interrupt            = true;
     }
 }

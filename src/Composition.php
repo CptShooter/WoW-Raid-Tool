@@ -11,14 +11,19 @@ namespace Raid;
 use Raid\Champ\Buffs\AttackPower;
 use Raid\Champ\Buffs\BloodlustHeroism;
 use Raid\Champ\Buffs\Buff;
+use Raid\Champ\Buffs\Damage;
 use Raid\Champ\Buffs\Intellect;
 use Raid\Champ\Buffs\MagicDamage;
+use Raid\Champ\Buffs\MasteryAutoAttack;
+use Raid\Champ\Buffs\Movement;
 use Raid\Champ\Buffs\PhysicalDamage;
 use Raid\Champ\Buffs\Stamina;
+use Raid\Champ\Buffs\Versatility;
 use Raid\Champ\Champ;
 use Raid\Champ\DeathKnight;
 use Raid\Champ\DemonHunter;
 use Raid\Champ\Druid;
+use Raid\Champ\Evoker;
 use Raid\Champ\Hunter;
 use Raid\Champ\Mage;
 use Raid\Champ\Monk;
@@ -44,6 +49,7 @@ class Composition
         $classes[] = new DeathKnight();
         $classes[] = new DemonHunter();
         $classes[] = new Druid();
+        $classes[] = new Evoker();
         $classes[] = new Hunter();
         $classes[] = new Mage();
         $classes[] = new Monk();
@@ -100,14 +106,20 @@ class Composition
         $buff['AttackPower'] = 0;
         $buff['Intellect'] = 0;
         $buff['Stamina'] = 0;
-        $buff['MagicDamage'] = 0;
-        $buff['PhysicalDamage'] = 0;
+        $buff['Versatility'] = 0;
+        $buff['Damage'] = 0;
+        $buff['Movement'] = 0;
+        $buff['MasteryAutoAttack'] = 0;
+
+        $debuff['MagicDamage'] = 0;
+        $debuff['PhysicalDamage'] = 0;
 
         $count['CombatRess'] = 0;
         $count['DispelMagic'] = 0;
         $count['DispelDisease'] = 0;
         $count['DispelPoison'] = 0;
         $count['DispelCurse'] = 0;
+        $count['DispelBleed'] = 0;
         $count['RemoveEnrage'] = 0;
         $count['Purge'] = 0;
         $count['Interrupt'] = 0;
@@ -143,11 +155,23 @@ class Composition
                     case $b instanceof Stamina:
                         $buff['Stamina']++;
                         break;
+                    case $b instanceof Versatility:
+                        $buff['Versatility']++;
+                        break;
+                    case $b instanceof Damage:
+                        $buff['Damage']++;
+                        break;
+                    case $b instanceof Movement:
+                        $buff['Movement']++;
+                        break;
                     case $b instanceof MagicDamage:
-                        $buff['MagicDamage']++;
+                        $debuff['MagicDamage']++;
+                        break;
+                    case $b instanceof MasteryAutoAttack:
+                        $buff['MasteryAutoAttack']++;
                         break;
                     case $b instanceof PhysicalDamage:
-                        $buff['PhysicalDamage']++;
+                        $debuff['PhysicalDamage']++;
                         break;
                     case $b instanceof BloodlustHeroism:
                         $buff['BloodlustHeroism']++;
@@ -165,6 +189,7 @@ class Composition
             $count['DispelDisease'] += (int) $spec->isDispelDisease();
             $count['DispelPoison'] += (int) $spec->isDispelPoison();
             $count['DispelCurse'] += (int) $spec->isDispelCurse();
+            $count['DispelBleed'] += (int) $spec->isDispelBleed();
             $count['RemoveEnrage'] += (int) $spec->isRemoveEnrage();
             $count['Purge'] += (int) $spec->isPurge();
             $count['Interrupt'] += (int) $spec->isInterrupt();
@@ -177,6 +202,7 @@ class Composition
 
         echo json_encode([
             'buffs' => $buff,
+            'debuffs' => $debuff,
             'counts' => $count,
             'setup' => $setup,
             'link' => $this->groupListToString($groupList)

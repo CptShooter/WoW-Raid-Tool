@@ -16,12 +16,13 @@ class Destruction extends Spec
     {
         $this->tag = '8';
         $this->name = 'Destruction';
-        $this->icon = 'spell_shadow_rainoffire.gif';
+        $this->icon = 'spell_shadow_rainoffire.jpg';
         $this->type = 'RDPS';
         $this->dispelCurse          = false;
         $this->dispelDisease        = false;
         $this->dispelPoison         = false;
-        $this->dispelMagic          = true;
+        $this->dispelMagic          = false;
+        $this->dispelBleed          = false;
         $this->removeEnrage         = false;
         $this->combatResurrection   = true;
         $this->purge                = false;

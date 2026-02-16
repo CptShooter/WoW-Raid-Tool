@@ -11,6 +11,7 @@ namespace Raid\Champ;
 use Raid\Champ\Buffs\MagicDamage;
 use Raid\Champ\Spec\DemonHunter\Havoc;
 use Raid\Champ\Spec\DemonHunter\Vengeance;
+use Raid\Champ\Spec\DemonHunter\Devourer;
 
 class DemonHunter extends Champ
 {
@@ -20,6 +21,7 @@ class DemonHunter extends Champ
         $this->classColor = [163 , 48, 201];
         $this->specs['Havoc'] = new Havoc();
         $this->specs['Vengeance'] = new Vengeance();
+        $this->specs['Devourer'] = new Devourer();
         $this->buffs[] = new MagicDamage('Chaos Brand');
     }
 }

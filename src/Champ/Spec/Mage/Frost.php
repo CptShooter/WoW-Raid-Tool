@@ -16,12 +16,13 @@ class Frost extends Spec
     {
         $this->tag = 'o';
         $this->name = 'Frost';
-        $this->icon = 'spell_frost_frostbolt02.gif';
+        $this->icon = 'spell_frost_frostbolt02.jpg';
         $this->type = 'RDPS';
         $this->dispelCurse          = true;
         $this->dispelDisease        = false;
         $this->dispelPoison         = false;
         $this->dispelMagic          = false;
+        $this->dispelBleed          = false;
         $this->removeEnrage         = false;
         $this->combatResurrection   = false;
         $this->purge                = true;

@@ -16,12 +16,13 @@ class Shadow extends Spec
     {
         $this->tag = 'y';
         $this->name = 'Shadow';
-        $this->icon = 'spell_shadow_shadowwordpain.gif';
+        $this->icon = 'spell_shadow_shadowwordpain.jpg';
         $this->type = 'RDPS';
         $this->dispelCurse          = false;
         $this->dispelDisease        = true;
         $this->dispelPoison         = false;
         $this->dispelMagic          = true;
+        $this->dispelBleed          = false;
         $this->removeEnrage         = false;
         $this->combatResurrection   = false;
         $this->purge                = true;

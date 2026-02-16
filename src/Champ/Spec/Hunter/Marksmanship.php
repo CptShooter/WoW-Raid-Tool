@@ -16,15 +16,16 @@ class Marksmanship extends Spec
     {
         $this->tag = 'k';
         $this->name = 'Marksmanship';
-        $this->icon = 'ability_hunter_focusedaim.gif';
+        $this->icon = 'ability_hunter_focusedaim.jpg';
         $this->type = 'RDPS';
         $this->dispelCurse          = false;
         $this->dispelDisease        = false;
         $this->dispelPoison         = false;
         $this->dispelMagic          = false;
-        $this->removeEnrage         = false;
+        $this->dispelBleed          = false;
+        $this->removeEnrage         = true;
         $this->combatResurrection   = false;
-        $this->purge                = false;
+        $this->purge                = true;
         $this->interrupt            = true;
     }
 }
