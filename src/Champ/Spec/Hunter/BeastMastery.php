@@ -16,12 +16,13 @@ class BeastMastery extends Spec
     {
         $this->tag = 'j';
         $this->name = 'Beast Mastery';
-        $this->icon = 'ability_hunter_bestialdiscipline.gif';
+        $this->icon = 'ability_hunter_bestialdiscipline.jpg';
         $this->type = 'RDPS';
         $this->dispelCurse          = false;
         $this->dispelDisease        = false;
         $this->dispelPoison         = false;
         $this->dispelMagic          = false;
+        $this->dispelBleed          = false;
         $this->removeEnrage         = true;
         $this->combatResurrection   = false;
         $this->purge                = true;

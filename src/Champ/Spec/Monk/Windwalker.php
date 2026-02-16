@@ -16,12 +16,13 @@ class Windwalker extends Spec
     {
         $this->tag = 's';
         $this->name = 'Windwalker';
-        $this->icon = 'monk_stance_whitetiger.gif';
+        $this->icon = 'spell_monk_windwalker_spec.jpg';
         $this->type = 'MDPS';
         $this->dispelCurse          = false;
         $this->dispelDisease        = true;
         $this->dispelPoison         = true;
         $this->dispelMagic          = false;
+        $this->dispelBleed          = false;
         $this->removeEnrage         = false;
         $this->combatResurrection   = false;
         $this->purge                = false;

@@ -16,14 +16,15 @@ class Protection extends Spec
     {
         $this->tag = 'u';
         $this->name = 'Protection';
-        $this->icon = 'ability_paladin_shieldofthetemplar.gif';
+        $this->icon = 'ability_paladin_shieldofthetemplar.jpg';
         $this->type = 'TANK';
         $this->dispelCurse          = false;
         $this->dispelDisease        = true;
         $this->dispelPoison         = true;
         $this->dispelMagic          = false;
+        $this->dispelBleed          = false;
         $this->removeEnrage         = false;
-        $this->combatResurrection   = false;
+        $this->combatResurrection   = true;
         $this->purge                = false;
         $this->interrupt            = true;
     }

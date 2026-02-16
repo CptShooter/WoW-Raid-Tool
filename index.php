@@ -17,7 +17,7 @@ $fromLink = $raid->getFromLink();
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/ui-darkness/jquery-ui.css">
     <link rel="stylesheet" href="main1.4.css">
 
-    <title>Raid Composition - WoW 8.0.1</title>
+    <title>Raid Composition - WoW 12.0.0 (Midnight)</title>
 </head>
 <body>
 <div class="container">
@@ -34,7 +34,7 @@ $fromLink = $raid->getFromLink();
                     <a href="#" id="clear">Clear</a>
                 </div>
                 <div class="col-5">
-                    <span>World of Warcraft 8.0.1</span>
+                    <span>World of Warcraft 12.0.0 (Midnight)</span>
                 </div>
             </div>
         </div>
@@ -48,7 +48,7 @@ $fromLink = $raid->getFromLink();
                     <?php foreach($champ->getSpecs() as $spec) { ?>
                         <div class="champ" data-champ="<?= $champ->getName(); ?>" data-spec="<?= $spec->getName(); ?>" style="color: <?= $champ->getClassColor(); ?>">
                             <div class="spec">
-                                <img src="/img/<?= $spec->getIcon(); ?>">
+                                <img src="/img/<?= $spec->getIcon(); ?>" width="15" height="15">
                                 <div class="name"><?= $spec->getName(); ?></div>
                             </div>
                         </div>
@@ -70,7 +70,7 @@ $fromLink = $raid->getFromLink();
                                         <?php $champ = $fromLink[$count]['champ']; $spec = $fromLink[$count]['spec']; ?>
                                         <div class="champ from-link" data-champ="<?= $champ->getName(); ?>" data-spec="<?= $spec->getName(); ?>" style="color: <?= $champ->getClassColor(); ?>">
                                             <div class="spec">
-                                                <img src="/img/<?= $spec->getIcon(); ?>">
+                                                <img src="/img/<?= $spec->getIcon(); ?>" width="15" height="15">
                                                 <div class="name"><?= $spec->getName(); ?></div>
                                             </div>
                                         </div>
@@ -97,6 +97,15 @@ $fromLink = $raid->getFromLink();
                 <div><span class="number" id="Intellect">0</span> Intellect</div>
                 <div><span class="number" id="Stamina">0</span> Stamina</div>
                 <div><span class="number" id="AttackPower">0</span> Attack Power</div>
+                <div><span class="number" id="Versatility">0</span> Versatility</div>
+                <div><span class="number" id="Damage">0</span> Damage</div>
+                <div><span class="number" id="Movement">0</span> Movement</div>
+                <div><span class="number" id="MasteryAutoAttack">0</span> Mastery & AutoAttack</div>
+            </div>
+            <div class="debuffs-name">
+                <span>Debuffs</span>
+            </div>
+            <div class="debuffs">
                 <div><span class="number" id="MagicDamage">0</span> Magic Damage</div>
                 <div><span class="number" id="PhysicalDamage">0</span> Physical Damage</div>
             </div>
@@ -109,6 +118,7 @@ $fromLink = $raid->getFromLink();
                 <div><span class="number" id="DispelDisease">0</span> Dispel Disease</div>
                 <div><span class="number" id="DispelMagic">0</span> Dispel Magic</div>
                 <div><span class="number" id="DispelPoison">0</span> Dispel Poison</div>
+                <div><span class="number" id="DispelBleed">0</span> Dispel Bleed</div>
                 <div><span class="number" id="RemoveEnrage">0</span> Remove Enrage</div>
                 <div><span class="number" id="Interrupt">0</span> Interrupts</div>
                 <div><span class="number" id="Purge">0</span> Purges</div>

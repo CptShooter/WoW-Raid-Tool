@@ -8,6 +8,7 @@
 
 namespace Raid\Champ;
 
+use Raid\Champ\Buffs\Versatility;
 use Raid\Champ\Spec\Druid\Balance;
 use Raid\Champ\Spec\Druid\Feral;
 use Raid\Champ\Spec\Druid\Guardian;
@@ -23,6 +24,6 @@ class Druid extends Champ
         $this->specs['Feral'] = new Feral();
         $this->specs['Guardian'] = new Guardian();
         $this->specs['Restoration'] = new Restoration();
-        $this->buffs = [];
+        $this->buffs[] = new Versatility('Mark of the Wild');
     }
 }

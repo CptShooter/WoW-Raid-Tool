@@ -16,12 +16,13 @@ class Survival extends Spec
     {
         $this->tag = 'l';
         $this->name = 'Survival';
-        $this->icon = 'ability_hunter_camouflage.gif';
+        $this->icon = 'ability_hunter_camouflage.jpg';
         $this->type = 'RDPS';
         $this->dispelCurse          = false;
         $this->dispelDisease        = false;
         $this->dispelPoison         = false;
         $this->dispelMagic          = false;
+        $this->dispelBleed          = false;
         $this->removeEnrage         = true;
         $this->combatResurrection   = false;
         $this->purge                = true;

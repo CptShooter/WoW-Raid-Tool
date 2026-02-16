@@ -16,12 +16,13 @@ class Arcane extends Spec
     {
         $this->tag = 'm';
         $this->name = 'Arcane';
-        $this->icon = 'spell_holy_magicalsentry.gif';
+        $this->icon = 'spell_holy_magicalsentry.jpg';
         $this->type = 'RDPS';
         $this->dispelCurse          = true;
         $this->dispelDisease        = false;
         $this->dispelPoison         = false;
         $this->dispelMagic          = false;
+        $this->dispelBleed          = false;
         $this->removeEnrage         = false;
         $this->combatResurrection   = false;
         $this->purge                = true;

@@ -16,15 +16,16 @@ class Havoc extends Spec
     {
         $this->tag = 'd';
         $this->name = 'Havoc';
-        $this->icon = 'ability_demonhunter_specdps.gif';
+        $this->icon = 'ability_demonhunter_specdps.jpg';
         $this->type = 'MDPS';
         $this->dispelCurse          = false;
         $this->dispelDisease        = false;
         $this->dispelPoison         = false;
         $this->dispelMagic          = false;
+        $this->dispelBleed          = false;
         $this->removeEnrage         = false;
         $this->combatResurrection   = false;
-        $this->purge                = false;
+        $this->purge                = true;
         $this->interrupt            = true;
     }
 }

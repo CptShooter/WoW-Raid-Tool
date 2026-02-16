@@ -16,12 +16,13 @@ class Restoration extends Spec
     {
         $this->tag = '5';
         $this->name = 'Restoration';
-        $this->icon = 'spell_nature_magicimmunity.gif';
+        $this->icon = 'spell_nature_magicimmunity.jpg';
         $this->type = 'HEALER';
         $this->dispelCurse          = true;
         $this->dispelDisease        = false;
-        $this->dispelPoison         = false;
+        $this->dispelPoison         = true;
         $this->dispelMagic          = true;
+        $this->dispelBleed          = false;
         $this->removeEnrage         = false;
         $this->combatResurrection   = false;
         $this->purge                = true;

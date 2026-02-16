@@ -16,14 +16,15 @@ class Retribution extends Spec
     {
         $this->tag = 'v';
         $this->name = 'Retribution';
-        $this->icon = 'spell_holy_auraoflight.gif';
+        $this->icon = 'spell_holy_auraoflight.jpg';
         $this->type = 'MDPS';
         $this->dispelCurse          = false;
         $this->dispelDisease        = true;
         $this->dispelPoison         = true;
         $this->dispelMagic          = false;
+        $this->dispelBleed          = false;
         $this->removeEnrage         = false;
-        $this->combatResurrection   = false;
+        $this->combatResurrection   = true;
         $this->purge                = false;
         $this->interrupt            = true;
     }
