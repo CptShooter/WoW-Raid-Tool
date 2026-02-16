@@ -23,7 +23,7 @@ $fromLink = $raid->getFromLink();
 <div class="container">
     <div class="row" id="menu">
         <div class="col-6" id="logo">
-            <h2>Raid Composition</h2>
+            <h2 id="comp-title">Raid Composition</h2>
         </div>
         <div class="col-6" id="info">
             <div class="row">
@@ -42,8 +42,14 @@ $fromLink = $raid->getFromLink();
     <div class="row" id="composition">
         <div class="col">
             <div id="champions">
+                <div class="column">
                 <?php /** @var \Raid\Champ\Champ $champ */ ?>
+                <?php $classCount = 0; ?>
                 <?php foreach($classes as $champ) { ?>
+                    <?php $classCount++; ?>
+                    <?php if($classCount == 8) { ?>
+                        </div><div class="column">
+                    <?php } ?>
                     <?php /** @var \Raid\Champ\Spec\Spec $spec */ ?>
                     <?php foreach($champ->getSpecs() as $spec) { ?>
                         <div class="champ" data-champ="<?= $champ->getName(); ?>" data-spec="<?= $spec->getName(); ?>" style="color: <?= $champ->getClassColor(); ?>">
@@ -55,6 +61,7 @@ $fromLink = $raid->getFromLink();
                     <?php } ?>
                         <div class="space"></div>
                 <?php } ?>
+                </div>
             </div>
         </div>
         <div class="col-6">
