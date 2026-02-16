@@ -23,7 +23,7 @@ $(document).ready(function() {
                 calculateComp();
             }
 
-            if($(ui.draggable).parent().is('#champions')){
+            if($(ui.draggable).closest('#champions').length > 0 && !$(ui.draggable).parent().hasClass('spot')){
                 ui.draggable.clone().appendTo($(this)).draggable({
                     containment: "#composition",
                     revert: "invalid",
