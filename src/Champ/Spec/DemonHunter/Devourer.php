@@ -1,8 +1,4 @@
 <?php
-/**
- * Created for WoW Midnight 12.0.0
- * Date: 16.02.2026
- */
 
 namespace Raid\Champ\Spec\DemonHunter;
 

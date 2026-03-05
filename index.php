@@ -17,7 +17,7 @@ $fromLink = $raid->getFromLink();
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/ui-darkness/jquery-ui.css">
     <link rel="stylesheet" href="main1.5.css">
 
-    <title>Raid Composition - WoW 12.0.0 (Midnight)</title>
+    <title>Raid Composition - WoW 12.0.1 (Midnight)</title>
 </head>
 <body>
 <div class="container">
@@ -34,7 +34,7 @@ $fromLink = $raid->getFromLink();
                     <a href="#" id="clear">Clear</a>
                 </div>
                 <div class="col-5">
-                    <span>World of Warcraft 12.0.0 (Midnight)</span>
+                    <span>World of Warcraft 12.0.1 (Midnight)</span>
                 </div>
             </div>
         </div>

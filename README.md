@@ -1,8 +1,8 @@
 # WoW Raid Composition Tool
 
-A web-based tool for planning World of Warcraft raid compositions for patch 12.0.0 (Midnight).
+A web-based tool for planning World of Warcraft raid compositions for patch 12.0.1 (Midnight).
 
-![World of Warcraft](https://img.shields.io/badge/WoW-12.0.0-blue)
+![World of Warcraft](https://img.shields.io/badge/WoW-12.0.1-blue)
 ![PHP](https://img.shields.io/badge/PHP-7.0+-purple)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
