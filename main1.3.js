@@ -59,7 +59,7 @@ $(document).ready(function() {
     $( "#composition").droppable({
         accept: ".champ",
         drop : function( event, ui ) {
-            if(!$(ui.draggable).parent().is('#champions')){
+            if($(ui.draggable).closest('#champions').length === 0){
                 $(ui.draggable).draggable("destroy").remove();
                 calculateComp();
             }
