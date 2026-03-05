@@ -55,7 +55,7 @@ The application is accessed at `index.php` in a web browser.
 ### Frontend-Backend Flow
 
 - **index.php**: Main HTML page, renders initial state from `Composition::getClasses()` and loads composition from URL param `?c=` if present
-- **main1.2.js**: jQuery UI drag-and-drop, triggers AJAX call to Endpoint.php after each composition change
+- **main1.3.js**: jQuery UI drag-and-drop, triggers AJAX call to Endpoint.php after each composition change
 - **Endpoint.php**: Receives `type=calculateComp` with array of `{champ, spec, grp}` objects, delegates to `Composition::calculateComp()`
 - **src/Composition.php**:
   - `getClasses()`: Instantiates all 12 classes
@@ -93,7 +93,7 @@ Example: `?c=a0000000000000000000000000000000000000n0` loads spec with tag 'a' i
 2. Add buff counter initialization in `Composition::calculateComp()`
 3. Add instanceof case in the buff-counting switch statement
 4. Update index.php to display the new buff counter
-5. Update JavaScript in main1.2.js to handle the new buff in the response
+5. Update JavaScript in main1.3.js to handle the new buff in the response
 
 ## Coding Conventions
 
