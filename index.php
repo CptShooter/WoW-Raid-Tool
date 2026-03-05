@@ -17,7 +17,7 @@ $fromLink = $raid->getFromLink();
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/ui-darkness/jquery-ui.css">
     <link rel="stylesheet" href="main1.5.css">
 
-    <title>Raid Composition - WoW 12.0.0 (Midnight)</title>
+    <title>Raid Composition - WoW 12.0.1 (Midnight)</title>
 </head>
 <body>
 <div class="container">
@@ -34,7 +34,7 @@ $fromLink = $raid->getFromLink();
                     <a href="#" id="clear">Clear</a>
                 </div>
                 <div class="col-5">
-                    <span>World of Warcraft 12.0.0 (Midnight)</span>
+                    <span>World of Warcraft 12.0.1 (Midnight)</span>
                 </div>
             </div>
         </div>
@@ -148,6 +148,6 @@ $fromLink = $raid->getFromLink();
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-<script src="main1.2.js"></script>
+<script src="main1.3.js"></script>
 </body>
 </html>
